@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background: #0b1e38;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffa500;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #1a3759;
+}
+
+section {
+    padding: 50px 10%;
+    margin-top: 20px;
+}
+
+#historia, #personajes, #juegos {
+    margin: 40px 0;
+    background-color: #0b1e38;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffa500;
+}
+
+p, ul {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.character-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.character {
+    text-align: center;
+    margin: 20px;
+}
+
+.character img {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.character img:hover {
+    transform: translateY(-10px);
+}
+
+.character h3 {
+    margin-top: 10px;
+    color: #ffa500;
+    font-size: 1.5em;
+}
+
+.game-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.game {
+    min-width: 300px;
+    margin: 10px;
+    background-color: #1a3759;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.game:hover {
+    transform: translateY(-10px);
+}
+
+.game h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffa500;
+}
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.video-container video {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#formulario {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#formulario h2 {
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+#formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    text-align: left;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+#formulario input[type="submit"] {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formulario input[type="submit"]:hover {
+    background-color: #ff6600;
+}
